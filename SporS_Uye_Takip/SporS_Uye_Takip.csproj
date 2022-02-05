@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7A347DC3-A0A5-4689-869F-53FA9D877211}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SporS_Uye_Takip</RootNamespace>
+    <AssemblyName>SporS_Uye_Takip</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="formlar\anaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formlar\anaSayfa.Designer.cs">
+      <DependentUpon>anaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formlar\giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formlar\giris.Designer.cs">
+      <DependentUpon>giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formlar\girisYap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formlar\girisYap.Designer.cs">
+      <DependentUpon>girisYap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formlar\kapiEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formlar\kapiEkle.Designer.cs">
+      <DependentUpon>kapiEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formlar\kapiGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formlar\kapiGuncelle.Designer.cs">
+      <DependentUpon>kapiGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formlar\kapilar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formlar\kapilar.Designer.cs">
+      <DependentUpon>kapilar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formlar\kullaniciEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formlar\kullaniciEkle.Designer.cs">
+      <DependentUpon>kullaniciEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formlar\kullanicilar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formlar\kullanicilar.Designer.cs">
+      <DependentUpon>kullanicilar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formlar\kullanicİGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formlar\kullanicİGuncelle.Designer.cs">
+      <DependentUpon>kullanicİGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formlar\uyeEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formlar\uyeEkle.Designer.cs">
+      <DependentUpon>uyeEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formlar\uyeGirisCikis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formlar\uyeGirisCikis.Designer.cs">
+      <DependentUpon>uyeGirisCikis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formlar\uyeGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formlar\uyeGuncelle.Designer.cs">
+      <DependentUpon>uyeGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="siniflar\sqlSinif.cs" />
+    <EmbeddedResource Include="formlar\anaSayfa.resx">
+      <DependentUpon>anaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formlar\giris.resx">
+      <DependentUpon>giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formlar\girisYap.resx">
+      <DependentUpon>girisYap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formlar\kapiEkle.resx">
+      <DependentUpon>kapiEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formlar\kapiGuncelle.resx">
+      <DependentUpon>kapiGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formlar\kapilar.resx">
+      <DependentUpon>kapilar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formlar\kullaniciEkle.resx">
+      <DependentUpon>kullaniciEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formlar\kullanicilar.resx">
+      <DependentUpon>kullanicilar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formlar\kullanicİGuncelle.resx">
+      <DependentUpon>kullanicİGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formlar\uyeEkle.resx">
+      <DependentUpon>uyeEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formlar\uyeGirisCikis.resx">
+      <DependentUpon>uyeGirisCikis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formlar\uyeGuncelle.resx">
+      <DependentUpon>uyeGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="resim\dogru.ico" />
+    <Content Include="resim\ekran.jpg" />
+    <Content Include="resim\kullanıcı.ico" />
+    <Content Include="resim\sifre.ico" />
+    <Content Include="resim\yanlis.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
